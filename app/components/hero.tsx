@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-[60vh] bg-linear-to-b from-white to-[#FAF8F5] flex items-center justify-center overflow-hidden p-24 -mt-0">
+    <section className="relative h-[60vh] bg-linear-to-b from-white to-[#FAF8F5] flex items-center justify-center overflow-hidden p-24 mt-0">
       {/* Background Blobs */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top-left peachy blob - moved down to not interfere with header */}
@@ -17,9 +17,9 @@ export default function Hero() {
         <p className="text-body text-[#4C5C54] mb-8 max-w-2xl mx-auto">
           A designer in training, inspired by how thoughtful design can make everyday moments feel more human and connected.
         </p>
-        <button className="bg-[#E9907D] hover:bg-[#DB7C67] text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all font-inter font-medium text-sm uppercase tracking-wide cursor-pointer">
+        <a href="/about" className="inline-block bg-[#E9907D] hover:bg-[#DB7C67] text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all font-inter font-medium text-sm uppercase tracking-wide cursor-pointer">
           MORE ABOUT ME!
-        </button>
+        </a>
       </div>
     </section>
   );
