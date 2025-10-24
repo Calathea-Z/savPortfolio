@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Color Palette */
+  --color-canvas: #FAF8F5;        /* Background Canvas */
+  --color-paper: #F2B798;         /* Secondary Background Paper */
+  --color-earth: #4C5C54;         /* Text / Neutral Earth */
+  --color-honey: #FCD28F;         /* Primary Brand / Logo Honey */
+  --color-clay: #E9907D;          /* Secondary Accent Clay */
+  --color-aqua: #B8CBC8;          /* Accent Aqua */
+  
+  /* Default backgrounds and text */
+  --background: var(--color-canvas);
+  --foreground: var(--color-earth);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-fraunces: var(--font-fraunces);
+  --font-inter: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+/* Typography System */
+.font-fraunces {
+  font-family: var(--font-fraunces), serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* H1 / Main Header */
+.text-h1 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(3rem, 4vw, 3.75rem); /* 48-60px */
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+/* H2 / Section Header */
+.text-h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(2rem, 3vw, 2.5rem); /* 32-40px */
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/* H3 / Subheading */
+.text-h3 {
+  font-family: var(--font-inter), sans-serif;
+  font-size: clamp(1.25rem, 2vw, 1.5rem); /* 20-24px */
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+/* Body Text */
+.text-body {
+  font-family: var(--font-inter), sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16-18px */
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Caption / Small Text */
+.text-caption {
+  font-family: var(--font-inter), sans-serif;
+  font-size: clamp(0.75rem, 1vw, 0.875rem); /* 12-14px */
+  line-height: 1.4;
+  font-weight: 500;
 }
