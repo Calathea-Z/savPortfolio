@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CTA() {
   return (
@@ -20,9 +21,12 @@ export default function CTA() {
             Let's make something great!!
           </h2>
           <div>
-            <button className="bg-[#E9907D] hover:bg-[#DB7C67] text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all font-inter font-medium text-sm uppercase tracking-wide cursor-pointer">
+            <Link
+              href="/contact"
+              className="inline-block bg-[#E9907D] hover:bg-[#DB7C67] text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all font-inter font-medium text-sm uppercase tracking-wide cursor-pointer"
+            >
               CONTACT ME
-            </button>
+            </Link>
           </div>
         </div>
       </div>
