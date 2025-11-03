@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="w-full bg-transparent py-6 px-8 sticky top-0 z-50 shadow-none backdrop-blur-sm">
+    <header className="w-full bg-white py-6 px-8 sticky top-0 z-50 shadow-none">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <div className="relative">
@@ -27,11 +27,6 @@ export default function Header() {
             <a href="/#showcase" className="text-caption text-[#000000] hover:text-[#E9907D] transition-colors">
               MY WORK
             </a>
-          </li>
-          <li>
-            <Link href="/contact" className="text-caption text-[#000000] hover:text-[#E9907D] transition-colors">
-              CONTACT
-            </Link>
           </li>
         </ul>
       </nav>

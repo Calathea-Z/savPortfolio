@@ -40,7 +40,7 @@ export default function Footer() {
               <p className="text-caption text-[#E0E0E0]">
                 Site developed by{' '}
                 <a href="https://calathea.design" target="_blank" className="text-[#E08060] hover:text-[#E9907D] transition-colors">
-                  Calthea Web Designs
+                  Calathea Web Designs
                 </a>
               </p>
               
