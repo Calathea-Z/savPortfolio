@@ -19,33 +19,33 @@ export default function Showcase() {
           {/* Project 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-4">
-              <p className="text-caption text-[#4C5C54]/60">Case Study Type</p>
+              <p className="text-caption text-[#4C5C54]/60">UX/UI Mobile App Design</p>
               <h3 className="text-h3 text-[#4C5C54] relative inline-block">
-                <span className="relative z-10">PROJECT NAME</span>
+                <span className="relative z-10">PORCHLIGHT</span>
                 <span className="absolute inset-0 bg-[#FCD28F]/30 m-1 rounded-sm"></span>
               </h3>
               <p className="text-body text-[#4C5C54]">
-                This is a brief description of the case study.
+                Finding a home, not just housing
               </p>
               <a href="/casestudy-porchlight" className="inline-block text-caption text-[#000000] underline hover:text-[#E9907D] transition-colors">
                 read case study
               </a>
             </div>
             <div className="relative">
-              <div className="aspect-4/3 rounded-lg overflow-hidden">
+              <div className="aspect-4/3 rounded-lg overflow-hidden bg-white flex items-center justify-center">
                 <Image 
-                  src="/images/stockCaseStudy1.jpg" 
-                  alt="Wireframe Sketches" 
-                  width={600} 
-                  height={450}
-                  className="w-full h-full object-cover"
+                  src="/porchlight/PorchLight_Logo.png" 
+                  alt="PorchLight Logo" 
+                  width={400} 
+                  height={400}
+                  className="w-2/3 h-auto object-contain"
                 />
               </div>
             </div>
           </div>
 
           {/* Project 2 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-4">
               <p className="text-caption text-[#4C5C54]/60">Case Study Type</p>
               <h3 className="text-h3 text-[#4C5C54] relative inline-block">
@@ -70,10 +70,10 @@ export default function Showcase() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Project 3 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-4">
               <p className="text-caption text-[#4C5C54]/60">Case Study Type</p>
               <h3 className="text-h3 text-[#4C5C54] relative inline-block">
@@ -98,7 +98,7 @@ export default function Showcase() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
