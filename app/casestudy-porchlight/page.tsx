@@ -281,7 +281,7 @@ export default function CaseStudyPorchLight() {
                 <div key={num} className="group">
                   <div className="rounded-xs overflow-hidden bg-white shadow-lg shadow-[#4C5C54]/5 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
                     <Image 
-                      src={`/porchlight/LowFi_New${num}.png`}
+                      src={`/porchlight/lowFi_New${num}.png`}
                       alt={`Low Fidelity Wireframe ${num}`}
                       width={300} 
                       height={600}
